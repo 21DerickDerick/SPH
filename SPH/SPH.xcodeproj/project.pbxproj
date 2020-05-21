@@ -26,8 +26,12 @@
 		F7778C6A2476B8FB00A630AD /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C692476B8FB00A630AD /* BaseTableViewCell.swift */; };
 		F7778C6C2476B9C500A630AD /* BaseTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7778C6B2476B9C500A630AD /* BaseTableViewController.xib */; };
 		F7778C6E2476BDEA00A630AD /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C6D2476BDEA00A630AD /* BaseTableViewController.swift */; };
-		F7778C7B2476C24800A630AD /* DataUsageListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C7A2476C24800A630AD /* DataUsageListCoordinator.swift */; };
-		F7778C7D2476C28C00A630AD /* DataUsageListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C7C2476C28C00A630AD /* DataUsageListVC.swift */; };
+		F7778C802476C5F200A630AD /* DataUsageListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C7F2476C5F200A630AD /* DataUsageListCoordinator.swift */; };
+		F7778C822476C61600A630AD /* DataUsageListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C812476C61600A630AD /* DataUsageListVC.swift */; };
+		F7778C852476C72300A630AD /* UIFonts+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C842476C72300A630AD /* UIFonts+Additions.swift */; };
+		F7778C872476C78A00A630AD /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C862476C78A00A630AD /* UIColor+Additions.swift */; };
+		F7778C8C2476CD3200A630AD /* EntryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7778C8B2476CD3200A630AD /* EntryCell.xib */; };
+		F7778C8E2476CE2D00A630AD /* EntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C8D2476CE2D00A630AD /* EntryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,8 +83,12 @@
 		F7778C692476B8FB00A630AD /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		F7778C6B2476B9C500A630AD /* BaseTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseTableViewController.xib; sourceTree = "<group>"; };
 		F7778C6D2476BDEA00A630AD /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
-		F7778C7A2476C24800A630AD /* DataUsageListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataUsageListCoordinator.swift; path = ../../../../../../../../Documents/DataUsageListCoordinator.swift; sourceTree = "<group>"; };
-		F7778C7C2476C28C00A630AD /* DataUsageListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataUsageListVC.swift; path = ../../../../../../../../Documents/DataUsageListVC.swift; sourceTree = "<group>"; };
+		F7778C7F2476C5F200A630AD /* DataUsageListCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataUsageListCoordinator.swift; sourceTree = "<group>"; };
+		F7778C812476C61600A630AD /* DataUsageListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataUsageListVC.swift; sourceTree = "<group>"; };
+		F7778C842476C72300A630AD /* UIFonts+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFonts+Additions.swift"; sourceTree = "<group>"; };
+		F7778C862476C78A00A630AD /* UIColor+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
+		F7778C8B2476CD3200A630AD /* EntryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EntryCell.xib; sourceTree = "<group>"; };
+		F7778C8D2476CE2D00A630AD /* EntryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +254,8 @@
 		F7778C672476B8BA00A630AD /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				F7778C882476C78E00A630AD /* Colors */,
+				F7778C832476C66D00A630AD /* Fonts */,
 				F7778C682476B8D100A630AD /* TableViews */,
 			);
 			path = UIComponents;
@@ -264,9 +274,7 @@
 		F7778C762476C20800A630AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				F7778C782476C22600A630AD /* Coordinators */,
-				F7778C772476C22100A630AD /* Controllers */,
-				F7778C792476C22B00A630AD /* ViewModels */,
+				F7778C892476CCE600A630AD /* DataUsageList */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -274,7 +282,7 @@
 		F7778C772476C22100A630AD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F7778C7C2476C28C00A630AD /* DataUsageListVC.swift */,
+				F7778C812476C61600A630AD /* DataUsageListVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -282,7 +290,7 @@
 		F7778C782476C22600A630AD /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				F7778C7A2476C24800A630AD /* DataUsageListCoordinator.swift */,
+				F7778C7F2476C5F200A630AD /* DataUsageListCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -292,6 +300,42 @@
 			children = (
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F7778C832476C66D00A630AD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F7778C842476C72300A630AD /* UIFonts+Additions.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F7778C882476C78E00A630AD /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				F7778C862476C78A00A630AD /* UIColor+Additions.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		F7778C892476CCE600A630AD /* DataUsageList */ = {
+			isa = PBXGroup;
+			children = (
+				F7778C8A2476CCF900A630AD /* Cells */,
+				F7778C782476C22600A630AD /* Coordinators */,
+				F7778C772476C22100A630AD /* Controllers */,
+				F7778C792476C22B00A630AD /* ViewModels */,
+			);
+			path = DataUsageList;
+			sourceTree = "<group>";
+		};
+		F7778C8A2476CCF900A630AD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F7778C8B2476CD3200A630AD /* EntryCell.xib */,
+				F7778C8D2476CE2D00A630AD /* EntryCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -403,6 +447,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7778C8C2476CD3200A630AD /* EntryCell.xib in Resources */,
 				F7778C2B2476A19A00A630AD /* LaunchScreen.storyboard in Resources */,
 				F7778C282476A19A00A630AD /* Assets.xcassets in Resources */,
 				F7778C6C2476B9C500A630AD /* BaseTableViewController.xib in Resources */,
@@ -534,15 +579,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7778C662476B78D00A630AD /* BaseModel.swift in Sources */,
+				F7778C872476C78A00A630AD /* UIColor+Additions.swift in Sources */,
 				F7778C582476A66600A630AD /* Coordinator.swift in Sources */,
 				F7778C632476B53400A630AD /* AlertWireframe.swift in Sources */,
 				F7778C1F2476A19900A630AD /* AppDelegate.swift in Sources */,
+				F7778C852476C72300A630AD /* UIFonts+Additions.swift in Sources */,
 				F7778C602476AF8200A630AD /* ReachabilityManager.swift in Sources */,
 				F7778C5A2476A7D700A630AD /* ApplicationCoordinator.swift in Sources */,
-				F7778C7D2476C28C00A630AD /* DataUsageListVC.swift in Sources */,
+				F7778C822476C61600A630AD /* DataUsageListVC.swift in Sources */,
 				F7778C532476A33700A630AD /* ServiceDispatcher.swift in Sources */,
 				F7778C502476A31900A630AD /* RootControllerService.swift in Sources */,
-				F7778C7B2476C24800A630AD /* DataUsageListCoordinator.swift in Sources */,
+				F7778C802476C5F200A630AD /* DataUsageListCoordinator.swift in Sources */,
+				F7778C8E2476CE2D00A630AD /* EntryCell.swift in Sources */,
 				F7778C6A2476B8FB00A630AD /* BaseTableViewCell.swift in Sources */,
 				F7778C6E2476BDEA00A630AD /* BaseTableViewController.swift in Sources */,
 				F7778C5E2476ADAD00A630AD /* NetworkProvider.swift in Sources */,

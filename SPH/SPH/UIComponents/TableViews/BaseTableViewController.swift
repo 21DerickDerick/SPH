@@ -36,7 +36,13 @@ class BaseTableViewController: UIViewController {
     }
     
     func setupUI() {
+        navigationController?.navigationBar.titleTextAttributes = [
+            NSAttributedString.Key.foregroundColor: UIColor.mainBlue,
+            NSAttributedString.Key.font: UIFont.main,
+        ]
         
+        navigationController?.navigationBar.setBackgroundImage(UIColor.clear.as1ptImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIColor.lightBlue.as1ptImage()
     }
 }
 
