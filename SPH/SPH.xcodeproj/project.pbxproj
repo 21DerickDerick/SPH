@@ -32,6 +32,8 @@
 		F7778C872476C78A00A630AD /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C862476C78A00A630AD /* UIColor+Additions.swift */; };
 		F7778C8C2476CD3200A630AD /* EntryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7778C8B2476CD3200A630AD /* EntryCell.xib */; };
 		F7778C8E2476CE2D00A630AD /* EntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C8D2476CE2D00A630AD /* EntryCell.swift */; };
+		F7C577002476DE2F00A4F4F2 /* DataUsageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C576FF2476DE2F00A4F4F2 /* DataUsageList.swift */; };
+		F7C577032476DE9000A4F4F2 /* DataUsageListProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C577022476DE9000A4F4F2 /* DataUsageListProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,8 @@
 		F7778C862476C78A00A630AD /* UIColor+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
 		F7778C8B2476CD3200A630AD /* EntryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EntryCell.xib; sourceTree = "<group>"; };
 		F7778C8D2476CE2D00A630AD /* EntryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryCell.swift; sourceTree = "<group>"; };
+		F7C576FF2476DE2F00A4F4F2 /* DataUsageList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUsageList.swift; sourceTree = "<group>"; };
+		F7C577022476DE9000A4F4F2 /* DataUsageListProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUsageListProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -321,6 +325,8 @@
 		F7778C892476CCE600A630AD /* DataUsageList */ = {
 			isa = PBXGroup;
 			children = (
+				F7C577012476DE8200A4F4F2 /* Network */,
+				F7C576FE2476DE0B00A4F4F2 /* Models */,
 				F7778C8A2476CCF900A630AD /* Cells */,
 				F7778C782476C22600A630AD /* Coordinators */,
 				F7778C772476C22100A630AD /* Controllers */,
@@ -336,6 +342,22 @@
 				F7778C8D2476CE2D00A630AD /* EntryCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		F7C576FE2476DE0B00A4F4F2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F7C576FF2476DE2F00A4F4F2 /* DataUsageList.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F7C577012476DE8200A4F4F2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F7C577022476DE9000A4F4F2 /* DataUsageListProvider.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -593,6 +615,8 @@
 				F7778C8E2476CE2D00A630AD /* EntryCell.swift in Sources */,
 				F7778C6A2476B8FB00A630AD /* BaseTableViewCell.swift in Sources */,
 				F7778C6E2476BDEA00A630AD /* BaseTableViewController.swift in Sources */,
+				F7C577002476DE2F00A4F4F2 /* DataUsageList.swift in Sources */,
+				F7C577032476DE9000A4F4F2 /* DataUsageListProvider.swift in Sources */,
 				F7778C5E2476ADAD00A630AD /* NetworkProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,6 +10,14 @@ import UIKit
 
 class DataUsageListVC: BaseTableViewController {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        DataUsageListProvider().getDataUsageList { (dataUsageList, error) in
+            
+        }
+    }
+    
     override func setupUI() {
         super.setupUI()
         

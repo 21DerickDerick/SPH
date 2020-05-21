@@ -11,9 +11,7 @@ import Alamofire
 class NetworkProvider {
     static var shared = NetworkProvider()
     
-    typealias JSON = [String: Any]
-    
-    func request(url: String, type: HTTPMethod, headers: [String: String], body: [String: Any]?, completion: @escaping (JSON?, AFError?) -> Void) {
+    func request(url: String, type: HTTPMethod, headers: [String: String], body: [String: Any]?, completion: @escaping (Data?, AFError?) -> Void) {
         
         if !ReachabilityManager.shared.hasConnection {
             AlertWireframe.shared.showNoInternetConnectionAlert(inViewController: ApplicationCoordinator.shared.window.rootViewController)
@@ -43,9 +41,8 @@ class NetworkProvider {
                 switch response.result {
                 case .failure(let error):
                     completion(nil, error)
-                case .success(let value):
-                    let json = value as! JSON
-                    completion(json, nil)
+                case .success:
+                    completion(response.data, nil)
                 }
         })
     }
