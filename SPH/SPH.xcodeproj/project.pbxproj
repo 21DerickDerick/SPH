@@ -14,6 +14,7 @@
 		F7778C412476A19B00A630AD /* SPHUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C402476A19B00A630AD /* SPHUITests.swift */; };
 		F7778C502476A31900A630AD /* RootControllerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C4F2476A31900A630AD /* RootControllerService.swift */; };
 		F7778C532476A33700A630AD /* ServiceDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C522476A33700A630AD /* ServiceDispatcher.swift */; };
+		F7778C582476A66600A630AD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C572476A66600A630AD /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		F7778C422476A19B00A630AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7778C4F2476A31900A630AD /* RootControllerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootControllerService.swift; sourceTree = "<group>"; };
 		F7778C522476A33700A630AD /* ServiceDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDispatcher.swift; sourceTree = "<group>"; };
+		F7778C572476A66600A630AD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				F7778C4E2476A2B200A630AD /* AppDelegate */,
+				F7778C552476A60C00A630AD /* Shared */,
 				F7778C272476A19A00A630AD /* Assets.xcassets */,
 				F7778C292476A19A00A630AD /* LaunchScreen.storyboard */,
 				F7778C2C2476A19A00A630AD /* Info.plist */,
@@ -131,6 +134,22 @@
 				F7778C522476A33700A630AD /* ServiceDispatcher.swift */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		F7778C552476A60C00A630AD /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F7778C562476A61F00A630AD /* Navigation */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		F7778C562476A61F00A630AD /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				F7778C572476A66600A630AD /* Coordinator.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7778C582476A66600A630AD /* Coordinator.swift in Sources */,
 				F7778C1F2476A19900A630AD /* AppDelegate.swift in Sources */,
 				F7778C532476A33700A630AD /* ServiceDispatcher.swift in Sources */,
 				F7778C502476A31900A630AD /* RootControllerService.swift in Sources */,
