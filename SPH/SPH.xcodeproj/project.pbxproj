@@ -23,6 +23,9 @@
 		F7778C602476AF8200A630AD /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C5F2476AF8200A630AD /* ReachabilityManager.swift */; };
 		F7778C632476B53400A630AD /* AlertWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C622476B53400A630AD /* AlertWireframe.swift */; };
 		F7778C662476B78D00A630AD /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C652476B78D00A630AD /* BaseModel.swift */; };
+		F7778C6A2476B8FB00A630AD /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C692476B8FB00A630AD /* BaseTableViewCell.swift */; };
+		F7778C6C2476B9C500A630AD /* BaseTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7778C6B2476B9C500A630AD /* BaseTableViewController.xib */; };
+		F7778C6E2476BDEA00A630AD /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C6D2476BDEA00A630AD /* BaseTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +74,9 @@
 		F7778C5F2476AF8200A630AD /* ReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
 		F7778C622476B53400A630AD /* AlertWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertWireframe.swift; sourceTree = "<group>"; };
 		F7778C652476B78D00A630AD /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		F7778C692476B8FB00A630AD /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		F7778C6B2476B9C500A630AD /* BaseTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseTableViewController.xib; sourceTree = "<group>"; };
+		F7778C6D2476BDEA00A630AD /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +155,7 @@
 		F7778C1D2476A19900A630AD /* SPH */ = {
 			isa = PBXGroup;
 			children = (
+				F7778C672476B8BA00A630AD /* UIComponents */,
 				F7778C5C2476AD6700A630AD /* Network */,
 				F7778C4E2476A2B200A630AD /* AppDelegate */,
 				F7778C552476A60C00A630AD /* Shared */,
@@ -229,6 +236,24 @@
 				F7778C652476B78D00A630AD /* BaseModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		F7778C672476B8BA00A630AD /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				F7778C682476B8D100A630AD /* TableViews */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		F7778C682476B8D100A630AD /* TableViews */ = {
+			isa = PBXGroup;
+			children = (
+				F7778C692476B8FB00A630AD /* BaseTableViewCell.swift */,
+				F7778C6B2476B9C500A630AD /* BaseTableViewController.xib */,
+				F7778C6D2476BDEA00A630AD /* BaseTableViewController.swift */,
+			);
+			path = TableViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,6 +367,7 @@
 			files = (
 				F7778C2B2476A19A00A630AD /* LaunchScreen.storyboard in Resources */,
 				F7778C282476A19A00A630AD /* Assets.xcassets in Resources */,
+				F7778C6C2476B9C500A630AD /* BaseTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +503,8 @@
 				F7778C5A2476A7D700A630AD /* ApplicationCoordinator.swift in Sources */,
 				F7778C532476A33700A630AD /* ServiceDispatcher.swift in Sources */,
 				F7778C502476A31900A630AD /* RootControllerService.swift in Sources */,
+				F7778C6A2476B8FB00A630AD /* BaseTableViewCell.swift in Sources */,
+				F7778C6E2476BDEA00A630AD /* BaseTableViewController.swift in Sources */,
 				F7778C5E2476ADAD00A630AD /* NetworkProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
