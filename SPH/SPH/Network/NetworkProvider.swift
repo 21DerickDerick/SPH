@@ -16,7 +16,7 @@ class NetworkProvider {
     func request(url: String, type: HTTPMethod, headers: [String: String], body: [String: Any]?, completion: @escaping (JSON?, AFError?) -> Void) {
         
         if !ReachabilityManager.shared.hasConnection {
-            // Todo: Show Alert
+            AlertWireframe.shared.showNoInternetConnectionAlert(inViewController: ApplicationCoordinator.shared.window.rootViewController)
             return
         }
         

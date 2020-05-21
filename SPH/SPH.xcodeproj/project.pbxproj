@@ -21,6 +21,7 @@
 		F7778C5A2476A7D700A630AD /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C592476A7D700A630AD /* ApplicationCoordinator.swift */; };
 		F7778C5E2476ADAD00A630AD /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C5D2476ADAD00A630AD /* NetworkProvider.swift */; };
 		F7778C602476AF8200A630AD /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C5F2476AF8200A630AD /* ReachabilityManager.swift */; };
+		F7778C632476B53400A630AD /* AlertWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C622476B53400A630AD /* AlertWireframe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		F7778C592476A7D700A630AD /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		F7778C5D2476ADAD00A630AD /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
 		F7778C5F2476AF8200A630AD /* ReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
+		F7778C622476B53400A630AD /* AlertWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertWireframe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 		F7778C552476A60C00A630AD /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				F7778C612476B51F00A630AD /* Alerts */,
 				F7778C562476A61F00A630AD /* Navigation */,
 			);
 			path = Shared;
@@ -207,6 +210,14 @@
 				F7778C5F2476AF8200A630AD /* ReachabilityManager.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		F7778C612476B51F00A630AD /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				F7778C622476B53400A630AD /* AlertWireframe.swift */,
+			);
+			path = Alerts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -448,6 +459,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7778C582476A66600A630AD /* Coordinator.swift in Sources */,
+				F7778C632476B53400A630AD /* AlertWireframe.swift in Sources */,
 				F7778C1F2476A19900A630AD /* AppDelegate.swift in Sources */,
 				F7778C602476AF8200A630AD /* ReachabilityManager.swift in Sources */,
 				F7778C5A2476A7D700A630AD /* ApplicationCoordinator.swift in Sources */,
