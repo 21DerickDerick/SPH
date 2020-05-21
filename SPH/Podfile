@@ -6,7 +6,7 @@ target 'SPH' do
   use_frameworks!
 
   # Pods for SPH
-  pod 'Alamofire'
+  pod 'Alamofire', '~> 5.1.0'
 
   target 'SPHTests' do
     inherit! :search_paths
