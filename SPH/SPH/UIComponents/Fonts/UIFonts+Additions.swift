@@ -14,7 +14,7 @@ extension UIFont {
     }
     
     class var secondary: UIFont {
-        return UIFont(name: "Avenir Next Demi Bold", size: 18)!
+        return UIFont(name: "Avenir Next Medium", size: 18)!
     }
     
     class var tertiary: UIFont {
