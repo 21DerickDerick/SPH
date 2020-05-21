@@ -15,6 +15,7 @@
 		F7778C502476A31900A630AD /* RootControllerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C4F2476A31900A630AD /* RootControllerService.swift */; };
 		F7778C532476A33700A630AD /* ServiceDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C522476A33700A630AD /* ServiceDispatcher.swift */; };
 		F7778C582476A66600A630AD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C572476A66600A630AD /* Coordinator.swift */; };
+		F7778C5A2476A7D700A630AD /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C592476A7D700A630AD /* ApplicationCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		F7778C4F2476A31900A630AD /* RootControllerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootControllerService.swift; sourceTree = "<group>"; };
 		F7778C522476A33700A630AD /* ServiceDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDispatcher.swift; sourceTree = "<group>"; };
 		F7778C572476A66600A630AD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		F7778C592476A7D700A630AD /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				F7778C572476A66600A630AD /* Coordinator.swift */,
+				F7778C592476A7D700A630AD /* ApplicationCoordinator.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 			files = (
 				F7778C582476A66600A630AD /* Coordinator.swift in Sources */,
 				F7778C1F2476A19900A630AD /* AppDelegate.swift in Sources */,
+				F7778C5A2476A7D700A630AD /* ApplicationCoordinator.swift in Sources */,
 				F7778C532476A33700A630AD /* ServiceDispatcher.swift in Sources */,
 				F7778C502476A31900A630AD /* RootControllerService.swift in Sources */,
 			);
