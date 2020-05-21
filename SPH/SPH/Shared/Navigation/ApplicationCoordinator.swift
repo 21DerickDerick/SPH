@@ -29,6 +29,10 @@ class ApplicationCoordinator: Coordinator {
 
 extension ApplicationCoordinator {
     func showDataUsageList() {
-        // Todo: Connect to data usage coordinator
+        removeAllChildCoordinator()
+        let dataUsageListCoordinator = DateUsageListCoordinator(presenter: rootViewController, window: window)
+        appendChildCoordinator(dataUsageListCoordinator)
+        dataUsageListCoordinator.parentCoordinator = self
+        dataUsageListCoordinator.start()
     }
 }
