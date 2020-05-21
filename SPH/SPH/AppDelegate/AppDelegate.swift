@@ -10,10 +10,13 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    let serviceDispatcher = ServiceDispatcher(services: [
+        RootControllerService(),
+    ])
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
-        return true
+        return serviceDispatcher.application(application, didFinishLaunchingWithOptions: launchOptions)
     }
 }
 

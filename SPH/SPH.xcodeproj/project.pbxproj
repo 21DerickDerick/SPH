@@ -12,6 +12,8 @@
 		F7778C2B2476A19A00A630AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7778C292476A19A00A630AD /* LaunchScreen.storyboard */; };
 		F7778C362476A19B00A630AD /* SPHTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C352476A19B00A630AD /* SPHTests.swift */; };
 		F7778C412476A19B00A630AD /* SPHUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C402476A19B00A630AD /* SPHUITests.swift */; };
+		F7778C502476A31900A630AD /* RootControllerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C4F2476A31900A630AD /* RootControllerService.swift */; };
+		F7778C532476A33700A630AD /* ServiceDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C522476A33700A630AD /* ServiceDispatcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		F7778C3C2476A19B00A630AD /* SPHUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPHUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7778C402476A19B00A630AD /* SPHUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPHUITests.swift; sourceTree = "<group>"; };
 		F7778C422476A19B00A630AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7778C4F2476A31900A630AD /* RootControllerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootControllerService.swift; sourceTree = "<group>"; };
+		F7778C522476A33700A630AD /* ServiceDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDispatcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +97,7 @@
 		F7778C1D2476A19900A630AD /* SPH */ = {
 			isa = PBXGroup;
 			children = (
-				F7778C1E2476A19900A630AD /* AppDelegate.swift */,
+				F7778C4E2476A2B200A630AD /* AppDelegate */,
 				F7778C272476A19A00A630AD /* Assets.xcassets */,
 				F7778C292476A19A00A630AD /* LaunchScreen.storyboard */,
 				F7778C2C2476A19A00A630AD /* Info.plist */,
@@ -117,6 +121,16 @@
 				F7778C422476A19B00A630AD /* Info.plist */,
 			);
 			path = SPHUITests;
+			sourceTree = "<group>";
+		};
+		F7778C4E2476A2B200A630AD /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				F7778C1E2476A19900A630AD /* AppDelegate.swift */,
+				F7778C4F2476A31900A630AD /* RootControllerService.swift */,
+				F7778C522476A33700A630AD /* ServiceDispatcher.swift */,
+			);
+			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +264,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7778C1F2476A19900A630AD /* AppDelegate.swift in Sources */,
+				F7778C532476A33700A630AD /* ServiceDispatcher.swift in Sources */,
+				F7778C502476A31900A630AD /* RootControllerService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
