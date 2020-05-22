@@ -19,6 +19,7 @@ class DataUsageVCViewModel {
     func getDataUsageList(dataUsageListProvider: DataUsageListProviderProtocol, completion: @escaping () -> Void) {
         dataUsageListProvider.getDataUsageList { (records, error) in
             if let _ = error {
+                completion()
                 return
             }
             

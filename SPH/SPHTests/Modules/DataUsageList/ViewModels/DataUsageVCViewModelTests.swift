@@ -41,8 +41,14 @@ class MockSuccessDataUsageListProvider: DataUsageListProviderProtocol {
         
         completion(records, nil)
     }
-    
-    
+}
+
+class MockInvalidURLErrorDataUsageListProvider: DataUsageListProviderProtocol {
+    func getDataUsageList(completion: @escaping ([Record]?, AFError?) -> Void) {
+        
+        let error: AFError = .invalidURL(url: "test1234")
+        completion(nil, error)
+    }
 }
 
 class DataUsageVCViewModelTests: XCTestCase {
