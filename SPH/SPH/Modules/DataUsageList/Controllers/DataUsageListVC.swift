@@ -10,11 +10,13 @@ import UIKit
 
 class DataUsageListVC: BaseTableViewController {
     
+    let viewModel = DataUsageVCViewModel(dataUsageListProvider: DataUsageListProvider())
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        DataUsageListProvider().getDataUsageList { (dataUsageList, error) in
-            
+        viewModel.getDataUsageList {
+            self.tableView.reloadData()
         }
     }
     
@@ -43,12 +45,14 @@ extension DataUsageListVC {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return viewModel.entries.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: EntryCell.self), for: indexPath) as! EntryCell
-        cell.set(year: "2018", totalUsage: "20.13412 PB")
+        
+        let entry = viewModel.entries[indexPath.row]
+        cell.set(year: entry.year, totalUsage: entry.getYearlyUsageAmount())
         cell.delegate = self
         return cell
     }

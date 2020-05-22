@@ -9,9 +9,8 @@
 import Alamofire
 
 class DataUsageListProvider {
-    static let sharedInstance = DataUsageListProvider()
     
-    func getDataUsageList(completion: @escaping (DataUsageList?, AFError?) -> Void) {
+    func getDataUsageList(completion: @escaping ([Record]?, AFError?) -> Void) {
         let url = "https://data.gov.sg/api/action/datastore_search?resource_id=a807b7ab-6cad-4aa6-87d0-e283a7353a0f&limit=59"
         
         let headers: [String: String] = [:]
@@ -25,13 +24,9 @@ class DataUsageListProvider {
             
             
             if let data = data, let baseModel = try? JSONDecoder().decode(BaseModel<DataUsageList>.self, from: data) {
-                
-                print("debugd records: \(baseModel.result?.records)")
-                print("debugd resource_id: \(baseModel.result?.resourceID)")
-                print("debugd fields: \(baseModel.result?.fields)")
+                completion(baseModel.result?.records, nil)
+                return
             }
-            
-//            completion(nil, nil)
         }
     }
 }
