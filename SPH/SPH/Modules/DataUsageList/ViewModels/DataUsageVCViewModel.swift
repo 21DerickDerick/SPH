@@ -62,6 +62,6 @@ class DataUsageVCViewModel {
             entries.append(newEntry)
         }
         
-        return entries
+        return entries.reversed()
     }
 }
