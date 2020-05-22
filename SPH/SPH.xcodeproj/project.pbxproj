@@ -10,13 +10,14 @@
 		3E1C213990F21AE419FF99EA /* Pods_SPHTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2967E533E0E3DB49863462 /* Pods_SPHTests.framework */; };
 		650B7AB80629EB03C0616DB1 /* Pods_SPH_SPHUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F22C376CA0D8C26D3E221DC /* Pods_SPH_SPHUITests.framework */; };
 		E34FDA0D8FD6061D639315D2 /* Pods_SPH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D167F413F96AE050EC1BFA06 /* Pods_SPH.framework */; };
+		F710A6C22477BA810003F677 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F710A6C12477BA810003F677 /* HelperFunctions.swift */; };
 		F773FFF02477711B00461607 /* DataUsageVCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F773FFEF2477711B00461607 /* DataUsageVCViewModel.swift */; };
 		F773FFF2247776E400461607 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F773FFF1247776E400461607 /* Entry.swift */; };
+		F773FFF524779B6700461607 /* DataUsageListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F773FFF424779B6700461607 /* DataUsageListTests.swift */; };
 		F7778C1F2476A19900A630AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C1E2476A19900A630AD /* AppDelegate.swift */; };
 		F7778C282476A19A00A630AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7778C272476A19A00A630AD /* Assets.xcassets */; };
 		F7778C2B2476A19A00A630AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7778C292476A19A00A630AD /* LaunchScreen.storyboard */; };
 		F7778C362476A19B00A630AD /* SPHTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C352476A19B00A630AD /* SPHTests.swift */; };
-		F7778C412476A19B00A630AD /* SPHUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C402476A19B00A630AD /* SPHUITests.swift */; };
 		F7778C502476A31900A630AD /* RootControllerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C4F2476A31900A630AD /* RootControllerService.swift */; };
 		F7778C532476A33700A630AD /* ServiceDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C522476A33700A630AD /* ServiceDispatcher.swift */; };
 		F7778C582476A66600A630AD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C572476A66600A630AD /* Coordinator.swift */; };
@@ -65,8 +66,10 @@
 		C73214569E51159FAE0A240B /* Pods-SPH-SPHUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPH-SPHUITests.release.xcconfig"; path = "Target Support Files/Pods-SPH-SPHUITests/Pods-SPH-SPHUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D167F413F96AE050EC1BFA06 /* Pods_SPH.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPH.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2A388860EB79FF32D508C43 /* Pods-SPHTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPHTests.release.xcconfig"; path = "Target Support Files/Pods-SPHTests/Pods-SPHTests.release.xcconfig"; sourceTree = "<group>"; };
+		F710A6C12477BA810003F677 /* HelperFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
 		F773FFEF2477711B00461607 /* DataUsageVCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUsageVCViewModel.swift; sourceTree = "<group>"; };
 		F773FFF1247776E400461607 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		F773FFF424779B6700461607 /* DataUsageListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUsageListTests.swift; sourceTree = "<group>"; };
 		F7778C1B2476A19900A630AD /* SPH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7778C1E2476A19900A630AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7778C272476A19A00A630AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,7 +79,6 @@
 		F7778C352476A19B00A630AD /* SPHTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPHTests.swift; sourceTree = "<group>"; };
 		F7778C372476A19B00A630AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7778C3C2476A19B00A630AD /* SPHUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPHUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7778C402476A19B00A630AD /* SPHUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPHUITests.swift; sourceTree = "<group>"; };
 		F7778C422476A19B00A630AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7778C4F2476A31900A630AD /* RootControllerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootControllerService.swift; sourceTree = "<group>"; };
 		F7778C522476A33700A630AD /* ServiceDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDispatcher.swift; sourceTree = "<group>"; };
@@ -150,6 +152,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F773FFF324779B3D00461607 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				F773FFF424779B6700461607 /* DataUsageListTests.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
 		F7778C122476A19900A630AD = {
 			isa = PBXGroup;
 			children = (
@@ -199,7 +209,7 @@
 		F7778C3F2476A19B00A630AD /* SPHUITests */ = {
 			isa = PBXGroup;
 			children = (
-				F7778C402476A19B00A630AD /* SPHUITests.swift */,
+				F773FFF324779B3D00461607 /* Module */,
 				F7778C422476A19B00A630AD /* Info.plist */,
 			);
 			path = SPHUITests;
@@ -221,6 +231,7 @@
 				F7778C642476B77900A630AD /* Models */,
 				F7778C612476B51F00A630AD /* Alerts */,
 				F7778C562476A61F00A630AD /* Navigation */,
+				F710A6C12477BA810003F677 /* HelperFunctions.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -620,6 +631,7 @@
 				F7778C802476C5F200A630AD /* DataUsageListCoordinator.swift in Sources */,
 				F773FFF02477711B00461607 /* DataUsageVCViewModel.swift in Sources */,
 				F7778C8E2476CE2D00A630AD /* EntryCell.swift in Sources */,
+				F710A6C22477BA810003F677 /* HelperFunctions.swift in Sources */,
 				F7778C6A2476B8FB00A630AD /* BaseTableViewCell.swift in Sources */,
 				F773FFF2247776E400461607 /* Entry.swift in Sources */,
 				F7778C6E2476BDEA00A630AD /* BaseTableViewController.swift in Sources */,
@@ -641,7 +653,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7778C412476A19B00A630AD /* SPHUITests.swift in Sources */,
+				F773FFF524779B6700461607 /* DataUsageListTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

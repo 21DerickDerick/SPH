@@ -54,11 +54,25 @@ class EntryCell: BaseTableViewCell {
         rightImageView.isHidden = !entry.hasQuarterlyDecrease()
         
         self.entry = entry
+        
+        if isRunningTests {
+            setupTest()
+        }
     }
     
     @objc func didTapRightImageView() {
         guard let year = entry?.year else { return }
         
         delegate?.didTapRightImageView(year: year)
+    }
+    
+    func setupTest() {
+        guard let year = entry?.year else { return }
+        
+        self.accessibilityIdentifier = "\(year)entryCell"
+        yearLabel.accessibilityIdentifier = "\(year)yearLabel"
+        totalUsageLabel.accessibilityIdentifier = "\(year)totalUsageLabel"
+        rightImageView.accessibilityIdentifier = "\(year)rightImageView"
+        cardView.accessibilityIdentifier = "\(year)cardView"
     }
 }
