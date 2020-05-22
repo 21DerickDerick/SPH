@@ -52,7 +52,7 @@ extension DataUsageListVC {
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: EntryCell.self), for: indexPath) as! EntryCell
         
         let entry = viewModel.entries[indexPath.row]
-        cell.set(year: entry.year, totalUsage: entry.getYearlyUsageAmount())
+        cell.set(entry: entry)
         cell.delegate = self
         return cell
     }
@@ -63,7 +63,7 @@ extension DataUsageListVC {
 }
 
 extension DataUsageListVC: EntryCellDelegate {
-    func didTapRightImageView() {
-        // TODO: Add functionality.
+    func didTapRightImageView(year: String) {
+        AlertWireframe.shared.showHasQuarterlyDataUsageDecreaseAlert(inViewController: self, inYear: year)
     }
 }

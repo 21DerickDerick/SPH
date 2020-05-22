@@ -34,7 +34,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="s5d-Tu-o1V">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down" translatesAutoresizingMaskIntoConstraints="NO" id="s5d-Tu-o1V">
                                         <rect key="frame" x="443" y="91.5" width="20" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="2ZK-hu-oUo"/>
@@ -80,6 +80,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="rightArrow" width="12" height="12"/>
+        <image name="down" width="20" height="20"/>
     </resources>
 </document>

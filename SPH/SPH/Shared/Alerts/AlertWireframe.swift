@@ -21,4 +21,8 @@ class AlertWireframe {
     func showNoInternetConnectionAlert(inViewController vc: UIViewController?) {
         showOneButtonAlert("No Internet Connection", message: "Please check your connection", actionButton: "OK", inViewController: vc)
     }
+    
+    func showHasQuarterlyDataUsageDecreaseAlert(inViewController vc: UIViewController?, inYear year: String) {
+        showOneButtonAlert("Quarterly Decrease in \(year)", message: "There is quarterly decrease in data usage consumption in this year", actionButton: "OK", inViewController: vc)
+    }
 }

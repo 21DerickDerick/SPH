@@ -22,4 +22,24 @@ class Entry {
         
         return "\(String(total)) PB"
     }
+    
+    func hasQuarterlyDecrease() -> Bool {
+        var dataUsageArr: [Float] = []
+        
+        for record in records {
+            if let dataUsage = Float(record.volumeOfMobileData) {
+                dataUsageArr.append(dataUsage)
+            }
+        }
+        
+        for (index, dataUsage) in dataUsageArr.enumerated() {
+            guard index + 1 < dataUsageArr.count else { return false }
+            
+            if dataUsage > dataUsageArr[index + 1] {
+                return true
+            }
+        }
+        
+        return false
+    }
 }

@@ -9,7 +9,7 @@
 import UIKit
 
 protocol EntryCellDelegate: class {
-    func didTapRightImageView()
+    func didTapRightImageView(year: String)
 }
 
 class EntryCell: BaseTableViewCell {
@@ -20,6 +20,7 @@ class EntryCell: BaseTableViewCell {
     @IBOutlet weak var rightImageView: UIImageView!
     
     weak var delegate: EntryCellDelegate?
+    var entry: Entry?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -47,12 +48,17 @@ class EntryCell: BaseTableViewCell {
         rightImageView.isUserInteractionEnabled = true
     }
     
-    func set(year: String, totalUsage: String) {
-        yearLabel.text = year
-        totalUsageLabel.text = totalUsage
+    func set(entry: Entry) {
+        yearLabel.text = entry.year
+        totalUsageLabel.text = entry.getYearlyUsageAmount()
+        rightImageView.isHidden = !entry.hasQuarterlyDecrease()
+        
+        self.entry = entry
     }
     
     @objc func didTapRightImageView() {
-        delegate?.didTapRightImageView()
+        guard let year = entry?.year else { return }
+        
+        delegate?.didTapRightImageView(year: year)
     }
 }
