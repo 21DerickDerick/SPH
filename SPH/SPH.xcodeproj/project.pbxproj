@@ -17,7 +17,6 @@
 		F7778C1F2476A19900A630AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C1E2476A19900A630AD /* AppDelegate.swift */; };
 		F7778C282476A19A00A630AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7778C272476A19A00A630AD /* Assets.xcassets */; };
 		F7778C2B2476A19A00A630AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7778C292476A19A00A630AD /* LaunchScreen.storyboard */; };
-		F7778C362476A19B00A630AD /* SPHTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C352476A19B00A630AD /* SPHTests.swift */; };
 		F7778C502476A31900A630AD /* RootControllerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C4F2476A31900A630AD /* RootControllerService.swift */; };
 		F7778C532476A33700A630AD /* ServiceDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C522476A33700A630AD /* ServiceDispatcher.swift */; };
 		F7778C582476A66600A630AD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C572476A66600A630AD /* Coordinator.swift */; };
@@ -37,6 +36,8 @@
 		F7778C8E2476CE2D00A630AD /* EntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7778C8D2476CE2D00A630AD /* EntryCell.swift */; };
 		F7C577002476DE2F00A4F4F2 /* DataUsageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C576FF2476DE2F00A4F4F2 /* DataUsageList.swift */; };
 		F7C577032476DE9000A4F4F2 /* DataUsageListProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C577022476DE9000A4F4F2 /* DataUsageListProvider.swift */; };
+		F7ECDA4F2477D29300C43A24 /* EntryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ECDA4E2477D29300C43A24 /* EntryTests.swift */; };
+		F7ECDA522477DA2500C43A24 /* HelperFunctionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ECDA512477DA2500C43A24 /* HelperFunctionsTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +77,6 @@
 		F7778C2A2476A19A00A630AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7778C2C2476A19A00A630AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7778C312476A19B00A630AD /* SPHTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPHTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7778C352476A19B00A630AD /* SPHTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPHTests.swift; sourceTree = "<group>"; };
 		F7778C372476A19B00A630AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7778C3C2476A19B00A630AD /* SPHUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPHUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7778C422476A19B00A630AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,6 +99,8 @@
 		F7778C8D2476CE2D00A630AD /* EntryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryCell.swift; sourceTree = "<group>"; };
 		F7C576FF2476DE2F00A4F4F2 /* DataUsageList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUsageList.swift; sourceTree = "<group>"; };
 		F7C577022476DE9000A4F4F2 /* DataUsageListProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUsageListProvider.swift; sourceTree = "<group>"; };
+		F7ECDA4E2477D29300C43A24 /* EntryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryTests.swift; sourceTree = "<group>"; };
+		F7ECDA512477DA2500C43A24 /* HelperFunctionsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFunctionsTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,7 +202,8 @@
 		F7778C342476A19B00A630AD /* SPHTests */ = {
 			isa = PBXGroup;
 			children = (
-				F7778C352476A19B00A630AD /* SPHTests.swift */,
+				F7ECDA502477DA1000C43A24 /* Shared */,
+				F7ECDA4B2477D26E00C43A24 /* Modules */,
 				F7778C372476A19B00A630AD /* Info.plist */,
 			);
 			path = SPHTests;
@@ -375,6 +378,38 @@
 				F7C577022476DE9000A4F4F2 /* DataUsageListProvider.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		F7ECDA4B2477D26E00C43A24 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F7ECDA4C2477D27D00C43A24 /* DataUsageList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F7ECDA4C2477D27D00C43A24 /* DataUsageList */ = {
+			isa = PBXGroup;
+			children = (
+				F7ECDA4D2477D28500C43A24 /* Models */,
+			);
+			path = DataUsageList;
+			sourceTree = "<group>";
+		};
+		F7ECDA4D2477D28500C43A24 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F7ECDA4E2477D29300C43A24 /* EntryTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F7ECDA502477DA1000C43A24 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F7ECDA512477DA2500C43A24 /* HelperFunctionsTest.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -645,7 +680,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7778C362476A19B00A630AD /* SPHTests.swift in Sources */,
+				F7ECDA4F2477D29300C43A24 /* EntryTests.swift in Sources */,
+				F7ECDA522477DA2500C43A24 /* HelperFunctionsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

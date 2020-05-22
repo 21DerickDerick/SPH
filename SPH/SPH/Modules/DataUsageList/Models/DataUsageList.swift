@@ -40,4 +40,10 @@ class Record: Codable {
         case quarter
         case id = "_id"
     }
+    
+    init(volumeOfMobileData: String, quarter: String, id: Int) {
+        self.volumeOfMobileData = volumeOfMobileData
+        self.quarter = quarter
+        self.id = id
+    }
 }
