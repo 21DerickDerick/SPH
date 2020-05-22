@@ -40,6 +40,7 @@
 		F7ECDA522477DA2500C43A24 /* HelperFunctionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ECDA512477DA2500C43A24 /* HelperFunctionsTest.swift */; };
 		F7ECDA562477F3DF00C43A24 /* UIFontAdditionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ECDA552477F3DF00C43A24 /* UIFontAdditionsTests.swift */; };
 		F7ECDA592477F78900C43A24 /* AlertWirefameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ECDA582477F78900C43A24 /* AlertWirefameTests.swift */; };
+		F7ECDA5C2477F95000C43A24 /* DataUsageVCViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ECDA5B2477F95000C43A24 /* DataUsageVCViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		F7ECDA512477DA2500C43A24 /* HelperFunctionsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFunctionsTest.swift; sourceTree = "<group>"; };
 		F7ECDA552477F3DF00C43A24 /* UIFontAdditionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontAdditionsTests.swift; sourceTree = "<group>"; };
 		F7ECDA582477F78900C43A24 /* AlertWirefameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertWirefameTests.swift; sourceTree = "<group>"; };
+		F7ECDA5B2477F95000C43A24 /* DataUsageVCViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUsageVCViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -396,6 +398,7 @@
 		F7ECDA4C2477D27D00C43A24 /* DataUsageList */ = {
 			isa = PBXGroup;
 			children = (
+				F7ECDA5A2477F93B00C43A24 /* ViewModels */,
 				F7ECDA4D2477D28500C43A24 /* Models */,
 			);
 			path = DataUsageList;
@@ -440,6 +443,14 @@
 				F7ECDA582477F78900C43A24 /* AlertWirefameTests.swift */,
 			);
 			path = Alerts;
+			sourceTree = "<group>";
+		};
+		F7ECDA5A2477F93B00C43A24 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F7ECDA5B2477F95000C43A24 /* DataUsageVCViewModelTests.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -710,6 +721,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7ECDA5C2477F95000C43A24 /* DataUsageVCViewModelTests.swift in Sources */,
 				F7ECDA562477F3DF00C43A24 /* UIFontAdditionsTests.swift in Sources */,
 				F7ECDA4F2477D29300C43A24 /* EntryTests.swift in Sources */,
 				F7ECDA592477F78900C43A24 /* AlertWirefameTests.swift in Sources */,

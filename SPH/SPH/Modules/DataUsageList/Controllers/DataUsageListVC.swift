@@ -15,7 +15,9 @@ class DataUsageListVC: BaseTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        viewModel.getDataUsageList {
+        guard let dataUsageListProvider = viewModel.dataUsageListProvider else { return }
+        
+        viewModel.getDataUsageList(dataUsageListProvider: dataUsageListProvider) {
             self.tableView.reloadData()
         }
     }
