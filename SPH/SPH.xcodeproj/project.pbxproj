@@ -39,6 +39,7 @@
 		F7ECDA4F2477D29300C43A24 /* EntryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ECDA4E2477D29300C43A24 /* EntryTests.swift */; };
 		F7ECDA522477DA2500C43A24 /* HelperFunctionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ECDA512477DA2500C43A24 /* HelperFunctionsTest.swift */; };
 		F7ECDA562477F3DF00C43A24 /* UIFontAdditionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ECDA552477F3DF00C43A24 /* UIFontAdditionsTests.swift */; };
+		F7ECDA592477F78900C43A24 /* AlertWirefameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ECDA582477F78900C43A24 /* AlertWirefameTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		F7ECDA4E2477D29300C43A24 /* EntryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryTests.swift; sourceTree = "<group>"; };
 		F7ECDA512477DA2500C43A24 /* HelperFunctionsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFunctionsTest.swift; sourceTree = "<group>"; };
 		F7ECDA552477F3DF00C43A24 /* UIFontAdditionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontAdditionsTests.swift; sourceTree = "<group>"; };
+		F7ECDA582477F78900C43A24 /* AlertWirefameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertWirefameTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -410,6 +412,7 @@
 		F7ECDA502477DA1000C43A24 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				F7ECDA572477F77400C43A24 /* Alerts */,
 				F7ECDA512477DA2500C43A24 /* HelperFunctionsTest.swift */,
 			);
 			path = Shared;
@@ -429,6 +432,14 @@
 				F7ECDA552477F3DF00C43A24 /* UIFontAdditionsTests.swift */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F7ECDA572477F77400C43A24 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				F7ECDA582477F78900C43A24 /* AlertWirefameTests.swift */,
+			);
+			path = Alerts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -701,6 +712,7 @@
 			files = (
 				F7ECDA562477F3DF00C43A24 /* UIFontAdditionsTests.swift in Sources */,
 				F7ECDA4F2477D29300C43A24 /* EntryTests.swift in Sources */,
+				F7ECDA592477F78900C43A24 /* AlertWirefameTests.swift in Sources */,
 				F7ECDA522477DA2500C43A24 /* HelperFunctionsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
