@@ -34,18 +34,3 @@ class UIFontAdditionsTests: XCTestCase {
         assert(UIFont.tertiary.pointSize == 14.0)
     }
 }
-
-/*
- class var main: UIFont {
-     return UIFont(name: "Avenir Next", size: 24)!
- }
- 
- class var secondary: UIFont {
-     return UIFont(name: "Avenir Next Medium", size: 18)!
- }
- 
- class var tertiary: UIFont {
-     return UIFont(name: "Avenir Next", size: 14)!
- }
- 
- */
