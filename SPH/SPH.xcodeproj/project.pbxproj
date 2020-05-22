@@ -42,6 +42,7 @@
 		F7ECDA592477F78900C43A24 /* AlertWirefameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ECDA582477F78900C43A24 /* AlertWirefameTests.swift */; };
 		F7ECDA5C2477F95000C43A24 /* DataUsageVCViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ECDA5B2477F95000C43A24 /* DataUsageVCViewModelTests.swift */; };
 		F7ECDA5F2478140A00C43A24 /* BaseTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ECDA5E2478140A00C43A24 /* BaseTableViewCellTests.swift */; };
+		F7ECDA62247816A500C43A24 /* CoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ECDA61247816A500C43A24 /* CoordinatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 		F7ECDA582477F78900C43A24 /* AlertWirefameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertWirefameTests.swift; sourceTree = "<group>"; };
 		F7ECDA5B2477F95000C43A24 /* DataUsageVCViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUsageVCViewModelTests.swift; sourceTree = "<group>"; };
 		F7ECDA5E2478140A00C43A24 /* BaseTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCellTests.swift; sourceTree = "<group>"; };
+		F7ECDA61247816A500C43A24 /* CoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -417,6 +419,7 @@
 		F7ECDA502477DA1000C43A24 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				F7ECDA602478169500C43A24 /* Navigations */,
 				F7ECDA572477F77400C43A24 /* Alerts */,
 				F7ECDA512477DA2500C43A24 /* HelperFunctionsTest.swift */,
 			);
@@ -462,6 +465,14 @@
 				F7ECDA5E2478140A00C43A24 /* BaseTableViewCellTests.swift */,
 			);
 			path = TableViews;
+			sourceTree = "<group>";
+		};
+		F7ECDA602478169500C43A24 /* Navigations */ = {
+			isa = PBXGroup;
+			children = (
+				F7ECDA61247816A500C43A24 /* CoordinatorTests.swift */,
+			);
+			path = Navigations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -733,6 +744,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7ECDA5F2478140A00C43A24 /* BaseTableViewCellTests.swift in Sources */,
+				F7ECDA62247816A500C43A24 /* CoordinatorTests.swift in Sources */,
 				F7ECDA5C2477F95000C43A24 /* DataUsageVCViewModelTests.swift in Sources */,
 				F7ECDA562477F3DF00C43A24 /* UIFontAdditionsTests.swift in Sources */,
 				F7ECDA4F2477D29300C43A24 /* EntryTests.swift in Sources */,
