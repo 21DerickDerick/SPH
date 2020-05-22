@@ -18,10 +18,8 @@ class ReachabilityManager {
         monitor.pathUpdateHandler = { path in
             if path.status == .satisfied {
                 self.hasConnection = true
-                print(self.hasConnection)
             } else {
                 self.hasConnection = false
-                print(self.hasConnection)
             }
         }
         
