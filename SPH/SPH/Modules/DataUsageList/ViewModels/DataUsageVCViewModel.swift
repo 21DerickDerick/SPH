@@ -8,15 +8,23 @@
 
 import Foundation
 
+protocol DataUsageVCViewModelDelegate: class {
+    func didStartCallingAPI()
+}
+
 class DataUsageVCViewModel {
     var dataUsageListProvider: DataUsageListProvider?
     var entries: [Entry] = []
+    
+    weak var delegate: DataUsageVCViewModelDelegate?
  
     init(dataUsageListProvider: DataUsageListProvider) {
         self.dataUsageListProvider = dataUsageListProvider
     }
     
     func getDataUsageList(dataUsageListProvider: DataUsageListProviderProtocol, completion: @escaping () -> Void) {
+        delegate?.didStartCallingAPI()
+        
         dataUsageListProvider.getDataUsageList { (records, error) in
             if let _ = error {
                 completion()

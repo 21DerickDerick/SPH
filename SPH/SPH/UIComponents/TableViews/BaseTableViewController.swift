@@ -11,6 +11,7 @@ import UIKit
 class BaseTableViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+     let spinnerVC = SpinnerVC()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +44,21 @@ class BaseTableViewController: UIViewController {
         
         navigationController?.navigationBar.setBackgroundImage(UIColor.clear.as1ptImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIColor.lightBlue.as1ptImage()
+    }
+    
+    func showLoadingIndicator() {
+        guard let currentViewFrame = ApplicationCoordinator.shared.window.rootViewController?.view.frame else { return }
+        
+        addChild(spinnerVC)
+        spinnerVC.view.frame = currentViewFrame
+        tableView.addSubview(spinnerVC.view)
+        spinnerVC.didMove(toParent: self)
+    }
+    
+    func hideLoadingIndicator() {
+        spinnerVC.willMove(toParent: nil)
+        spinnerVC.view.removeFromSuperview()
+        spinnerVC.removeFromParent()
     }
 }
 
