@@ -15,7 +15,6 @@ class NetworkProvider {
         
         if !ReachabilityManager.shared.hasConnection {
             AlertWireframe.shared.showNoInternetConnectionAlert(inViewController: ApplicationCoordinator.shared.window.rootViewController)
-            return
         }
         
         guard let url = URL(string: url) else { return }
@@ -23,6 +22,7 @@ class NetworkProvider {
         var request = URLRequest(url: url)
         request.httpMethod = type.rawValue
         request.timeoutInterval = 60
+        request.cachePolicy = .returnCacheDataDontLoad
         
         let httpHeaders = HTTPHeaders(headers)
         request.headers = httpHeaders
