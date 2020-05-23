@@ -11,13 +11,16 @@ import UIKit
 class DataUsageListVC: BaseTableViewController {
     
     let viewModel = DataUsageVCViewModel(dataUsageListProvider: DataUsageListProvider())
-    
+    private let refreshControl = UIRefreshControl()
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
         guard let dataUsageListProvider = viewModel.dataUsageListProvider else { return }
         
+        viewModel.delegate = self
         viewModel.getDataUsageList(dataUsageListProvider: dataUsageListProvider) {
+            self.hideLoadingIndicator()
             self.tableView.reloadData()
         }
     }
@@ -26,6 +29,9 @@ class DataUsageListVC: BaseTableViewController {
         super.setupUI()
         
         title = "Mobile Data Usage"
+        
+        tableView.addSubview(refreshControl)
+        refreshControl.addTarget(self, action: #selector(refreshList), for: .valueChanged)
     }
     
     override func registerNIB() {
@@ -33,6 +39,15 @@ class DataUsageListVC: BaseTableViewController {
         
         [EntryCell.self].forEach { (type) in
             tableView.register(UINib(nibName: String(describing: type), bundle: nil), forCellReuseIdentifier: String(describing: type))
+        }
+    }
+    
+    @objc private func refreshList() {
+        guard let dataUsageListProvider = viewModel.dataUsageListProvider else { return }
+        viewModel.getDataUsageList(dataUsageListProvider: dataUsageListProvider) {
+            self.hideLoadingIndicator()
+            self.tableView.reloadData()
+            self.refreshControl.endRefreshing()
         }
     }
 }
@@ -75,5 +90,11 @@ extension DataUsageListVC {
 extension DataUsageListVC: EntryCellDelegate {
     func didTapRightImageView(year: String) {
         AlertWireframe.shared.showHasQuarterlyDataUsageDecreaseAlert(inViewController: self, inYear: year)
+    }
+}
+
+extension DataUsageListVC: DataUsageVCViewModelDelegate {
+    func didStartCallingAPI() {
+        showLoadingIndicator()
     }
 }
